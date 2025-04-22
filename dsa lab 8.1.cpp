@@ -59,7 +59,7 @@ public:
         cout<<"Applicant "<<temp->applicant_id<<" has completed the test and left the queue."<<endl;
         delete temp;
 
-        if(front == nullptr)rear=nullptr;
+        if(front==nullptr)rear=nullptr;
     }
 
     void removeSecondApplicant() 
@@ -90,9 +90,7 @@ public:
         cout<<"Current queue:\n";
         while(temp!=nullptr)
 		{
-            cout<<"ID: "<<temp->applicant_id<<", Height: "<<temp->height
-                 <<", Weight: "<<temp->weight<<", Vision: "<<temp->vision
-                 <<", Status: "<<temp->status<<endl;
+            cout<<"ID: "<<temp->applicant_id<<", Height: "<<temp->height<<", Weight: "<<temp->weight<<", Vision: "<<temp->vision<<", Status: "<<temp->status<<endl;
             temp=temp->next;
         }
     }
@@ -123,4 +121,3 @@ int main()
 
     return 0;
 }
-
